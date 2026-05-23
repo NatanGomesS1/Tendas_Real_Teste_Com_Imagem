@@ -197,7 +197,7 @@
             color: var(--primary-blue-dark);
             border: none;
             padding: 14px 36px;
-            font-size: 1rem;
+            font-size: 1.4rem;
             font-weight: 700;
             border-radius: 50px;
             cursor: pointer;
@@ -223,8 +223,8 @@
             right: 4%;
             top: 50%;
             transform: translateY(-50%);
-            width: 340px;
-            max-width: 30vw;
+            width: 540px;
+            max-width: 50vw;
             height: auto;
             border-radius: 20px;
             box-shadow: 0 20px 35px rgba(0,0,0,0.25);
@@ -328,7 +328,7 @@
             box-shadow: 0 12px 22px rgba(0, 0, 0, 0.3);
         }
 
-        /* === CONTATO REFORMULADO === */
+        /* === CONTATO === */
         .contact-section {
             background: var(--primary-blue-dark);
             color: white;
@@ -525,7 +525,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                padding: 10px 0;
+                padding: 10px 16px;
                 flex-wrap: nowrap;
             }
 
@@ -551,7 +551,6 @@
                 z-index: 1001;
             }
 
-            /* Nav container sem fundo ou borda visível quando fechado */
             nav {
                 position: absolute;
                 top: 100%;
@@ -564,7 +563,6 @@
                 border-radius: 0;
             }
 
-            /* O menu (ul) ganha fundo e estilo apenas quando aberto */
             nav ul {
                 flex-direction: column;
                 align-items: center;
@@ -606,7 +604,7 @@
                 display: none;
             }
 
-            /* Ajustes no hero para mobile */
+            /* Ajustes no hero para mobile - imagem removida */
             .hero {
                 height: auto;
                 min-height: 500px;
@@ -624,16 +622,9 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+            /* Remove a imagem flutuante no mobile */
             .hero-right-image {
-                position: relative;
-                right: auto;
-                top: auto;
-                transform: none;
-                width: 220px;
-                margin: 30px auto 0;
-            }
-            .hero-right-image:hover {
-                transform: scale(1.02);
+                display: none;
             }
 
             .about-content {
@@ -714,7 +705,7 @@
         <div class="hero-content">
             <h2>ESTRUTURAS QUE<br>TRANSFORMAM EVENTOS</h2>
             <p>Proteção contra sol e chuva, climatização, palcos e todo o suporte para seu evento ser inesquecível, seguro e confortável.</p>
-            <a href="#contato" class="btn-hero">SOLICITAR ORÇAMENTO <i class="fas fa-arrow-right"></i></a>
+            <a href="https://wa.me/5522988260293?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20informações%20sobre%20tendas." class="btn-hero" target="_blank" rel="noopener noreferrer">SOLICITAR ORÇAMENTO <i class="fab fa-whatsapp"></i></a>
         </div>
         <img src="tendas_eventos_campos_dos_goytacazes.jpg" alt="Estrutura Tendas Real" class="hero-right-image">
     </section>
